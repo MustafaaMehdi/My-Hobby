@@ -1,3 +1,15 @@
 .navBar {
-    background-color: aqua;
+    margin-top: 10px;
+    color: aqua;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    button {
+        width: 100%;
+        border: none;
+    }
+    button:hover {
+        background-color: azure;
+        cursor: pointer;
+    }
 }
