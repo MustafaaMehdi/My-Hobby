@@ -28,5 +28,11 @@ body {
 				float: right;
 			}
 		}
+
+        .aboutSection {
+            display: flex;
+            flex-direction: column;
+            background-color: azure;
+        }
 	}
 }
