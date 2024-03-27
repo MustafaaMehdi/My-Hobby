@@ -11,7 +11,11 @@ export default function homeRender() {
         { name: 'Diablo', genre: 'MMORPG', image: 'Diablo.jpeg' },
         { name: 'Fallout', genre: 'RPG', image: 'fallout.jpeg' },
         { name: 'Assassins creed', genre: 'Action', image: 'assassinsCreed.jpeg' },
-
+        { name: 'God of war', genre: 'Action', image: 'godOfWar.jpeg' },
+        { name: 'The last of us', genre: 'Horror', image: 'lastOfUs.jpeg' },
+        { name: 'Bloodborne', genre: 'Action', image: 'Bloodborne.jpeg' },
+        { name: 'Ratchet Clank', genre: 'Adventure', image: 'ratchetClank.jpeg' },
+        { name: 'Ghost of Tsushima', genre: 'Action', image: 'ghostOfTsushima.jpeg' }
     ];
 
     games.forEach(game => {
