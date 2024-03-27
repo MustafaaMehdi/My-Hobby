@@ -57,6 +57,7 @@ export default function contactInfo() {
 		'messageInput',
 		'contactInput'
 	);
+	let sendMessageBtn = createElement('button', 'sendMessageBtn', 'sendMessageBtn', 'Send')
     let callUsHeader = createElement(
 		'h3',
 		'callUsHeader',
@@ -78,7 +79,7 @@ export default function contactInfo() {
 	emailAddressLabel.appendChild(emailAddressInput);
     nameLabel.appendChild(nameInput)
     messageLabel.appendChild(messageInput)
-	contactSection.append(contactHeader, contactEmailHeader, emailAddressLabel, nameLabel, messageLabel , callUsHeader, callUsNumber, backToHomeBtn);
+	contactSection.append(contactHeader, contactEmailHeader, emailAddressLabel, nameLabel, messageLabel , sendMessageBtn, callUsHeader, callUsNumber, backToHomeBtn);
 
     backToHomeBtn.addEventListener('click', homeRender)
 }
