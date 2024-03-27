@@ -17,6 +17,14 @@ body {
 	}
 
 	.mainContainer {
+        .hobbySection {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .gameContainer {
+                // grid-column: 1;
+            }
+        }
 		.contactSection {
 			display: flex;
 			flex-direction: column;

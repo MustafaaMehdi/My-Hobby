@@ -42,8 +42,8 @@ export default function homeRender() {
         let genreOption = createElement('option', '', '', genre);
         genreFilter.appendChild(genreOption);
     });
-
-    hobbySection.insertBefore(genreFilter, hobbySection.firstChild);
+    mainContainer.insertBefore(genreFilter, hobbySection)
+    // hobbySection.insertBefore(hobbySection.firstChild);
 
     genreFilter.addEventListener('change', function () {
         let selectedGenre = this.value;
