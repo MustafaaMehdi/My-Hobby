@@ -1,15 +1,38 @@
-.navBar {
-    margin-top: 10px;
-    color: aqua;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    button {
-        width: 100%;
-        border: none;
-    }
-    button:hover {
-        background-color: azure;
-        cursor: pointer;
-    }
+body {
+	font-family: 'Roboto', sans-serif;
+	.navBar {
+		margin-top: 10px;
+		color: aqua;
+		display: flex;
+		width: 100%;
+		justify-content: space-evenly;
+		button {
+			width: 100%;
+			border: none;
+		}
+		button:hover {
+			background-color: azure;
+			cursor: pointer;
+		}
+	}
+
+	.mainContainer {
+		.contactSection {
+			display: flex;
+			flex-direction: column;
+			background-color: aliceblue;
+			height: 100vh;
+			align-items: center;
+
+			.contactInput {
+				float: right;
+			}
+		}
+
+        .aboutSection {
+            display: flex;
+            flex-direction: column;
+            background-color: azure;
+        }
+	}
 }
