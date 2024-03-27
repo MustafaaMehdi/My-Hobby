@@ -17,12 +17,30 @@ body {
 	}
 
 	.mainContainer {
+        background-color: rgb(223, 226, 226);
+
+        .genreFilter {
+            background-color: rgb(204, 204, 204);
+            width: 100%;
+            text-align: center;
+            height: 30px;
+            margin-top: 10px;
+            border: none;
+        }
         .hobbySection {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
 
             .gameContainer {
-                // grid-column: 1;
+                
+                .gameImage {
+                    border-radius: 10px;
+                }
+                .gameImage:hover {
+                    transition:cubic-bezier(1, 0, 0, 1);
+                    box-shadow: 10px 10px 50px 20px rgb(182, 231, 231);
+                    cursor: pointer;
+                }
             }
         }
 		.contactSection {

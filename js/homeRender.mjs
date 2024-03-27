@@ -17,17 +17,19 @@ export default function homeRender() {
         { name: 'The last of us', genre: 'Horror', image: 'lastOfUs.jpeg' },
         { name: 'Bloodborne', genre: 'Action', image: 'Bloodborne.jpeg' },
         { name: 'Ratchet Clank', genre: 'Adventure', image: 'ratchetClank.jpeg' },
-        { name: 'Ghost of Tsushima', genre: 'Action', image: 'ghostOfTsushima.jpeg' }
+        { name: 'Ghost of Tsushima', genre: 'Action', image: 'ghostOfTsushima.jpeg' },
+        { name: 'Call of duty', genre: 'Action', image: 'callOfDuty.jpeg' }
     ];
 
     games.forEach(game => {
-        let gameContainer = createElement('div', 'gameContainer', 'gameContainer');
+        let gameContainer = createElement('article', 'gameContainer', 'gameContainer');
         let gameName = createElement('h2', 'gameName', 'gameName', game.name);
         let gameGenre = createElement('p', 'gameGenre', 'gameGenre', `Genre: ${game.genre}`);
         let gameImage = createElement('img', 'gameImage', 'gameImage');
-        gameImage.src = `public/${game.image}`;
+        gameImage.src = `/${game.image}`;
         gameImage.setAttribute('height', '400')
         gameImage.setAttribute('width', '200')
+        gameImage.setAttribute('alt', `${game.name} game cover`)
 
         gameContainer.append(gameName, gameImage, gameGenre);
         hobbySection.appendChild(gameContainer);
