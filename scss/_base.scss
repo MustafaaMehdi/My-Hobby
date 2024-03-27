@@ -1,3 +1,6 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
 .navBar {
     margin-top: 10px;
     color: aqua;
@@ -12,4 +15,17 @@
         background-color: azure;
         cursor: pointer;
     }
+}
+
+.mainContainer {
+    .contactSection {
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        height: 20vh;
+        align-items: center;
+
+    }
+}
+
 }
