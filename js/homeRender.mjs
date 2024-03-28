@@ -24,6 +24,7 @@ export default function homeRender() {
     
     games.forEach(game => {
         let gameContainer = createElement('article', `${game.name}`, 'gameContainer');
+        let descriptionBtn = createElement('button', '', '', 'Read more')
         let gameName = createElement('h2', 'gameName', 'gameName', game.name);
         let gameGenre = createElement('p', 'gameGenre', 'gameGenre', `Genre: ${game.genre}`);
         let gameImage = createElement('img', 'gameImage', 'gameImage');
@@ -32,7 +33,7 @@ export default function homeRender() {
         gameImage.setAttribute('width', '200')
         gameImage.setAttribute('alt', `${game.name} game cover`)
 
-        gameContainer.append(gameName, gameImage, gameGenre);
+        gameContainer.append(gameName, gameImage, descriptionBtn, gameGenre);
         hobbySection.appendChild(gameContainer);
         descriptionBtn.addEventListener('click', () => showDescription(game))
 
