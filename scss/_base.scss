@@ -41,45 +41,53 @@ body {
 	.mainContainer {
 		background-color: rgb(223, 226, 226);
 
-		.genreFilter {
-			background-image: linear-gradient(to right, #fde7ea, #ffffff, #fdefda);
-			width: 100%;
-			text-align: center;
-			height: 30px;
-			margin-top: 10px;
-			border: none;
-		}
-		.hobbySection {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			justify-items: center;
-			text-align: center;
-			.gameContainer {
-				margin-top: 10px;
-
-				.gameName {
-					background-color: aliceblue;
-					border-radius: 10px 10px 0 0;
-				}
-				.gameImage {
-					align-items: center;
-					// border-radius: 0 0 10px 10px;
-					border: 2px solid rgb(255, 255, 255);
-					border-top: none;
-					height: 800px;
-					width: 400px;
-				}
-				.gameImage:hover {
-					transition: cubic-bezier(1, 0, 0, 1);
-					box-shadow: 10px 10px 50px 20px rgb(182, 231, 231);
-					cursor: pointer;
-				}
-				.gameGenre {
-					background-color: aliceblue;
-					border-radius: 0 0 10px 10px;
-				}
-			}
-		}
+        .genreFilter {
+            background-color: rgb(204, 204, 204);
+            width: 100%;
+            text-align: center;
+            height: 30px;
+            margin-top: 10px;
+            border: none;
+        }
+        .hobbySection {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            text-align: center;
+            .gameContainer {
+                margin-top: 10px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                .gameName {
+                    background-color: aliceblue;
+                    border-radius: 10px 10px 0 0;
+                }
+                .descriptionBtn {
+                    border: none;
+                    border-radius: 0 0 10px 10px ;
+                }
+                .descriptionBtn:hover {
+                    background-color: azure;
+                    cursor: pointer;
+                }
+                .gameImage {
+                    align-items: center;
+                    // border-radius: 0 0 10px 10px;
+                    border: 2px solid rgb(255, 255, 255);
+                    border-top: none;
+                    height: 800px;
+                    width: 400px;
+                }
+                .gameImage:hover {
+                    transition:cubic-bezier(1, 0, 0, 1);
+                    box-shadow: 10px 10px 50px 20px rgb(182, 231, 231);
+                    cursor: pointer;
+                }
+                .gameGenre {
+                    background-color: aliceblue;
+                }
+            }
+        }
 		.contactSection {
 			display: flex;
 			flex-direction: column;
