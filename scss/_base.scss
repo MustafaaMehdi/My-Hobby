@@ -3,6 +3,12 @@ body {
 
     .mainHeader {
         text-align: center;
+        background-image: linear-gradient(
+            to right,
+            #FDE7EA,
+            #ffffff,
+            #FDEFDA
+        );
     }
 	.navBar {
 		margin-top: 10px;
