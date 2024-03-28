@@ -36,7 +36,6 @@ export default function homeRender() {
         gameContainer.append(gameName, gameImage, descriptionBtn, gameGenre);
         hobbySection.appendChild(gameContainer);
         descriptionBtn.addEventListener('click', () => showDescription(game))
-
     });
 
     let genreFilter = createElement('select', 'genreFilter', 'genreFilter');
