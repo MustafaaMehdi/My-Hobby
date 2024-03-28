@@ -21,6 +21,7 @@ export default function homeRender() {
         { name: 'Call of duty', genre: 'Action', image: 'callOfDuty.jpeg', description: 'COD cold war' }
     ];
 
+    
     games.forEach(game => {
         let gameContainer = createElement('article', `${game.name}`, 'gameContainer');
         let gameName = createElement('h2', 'gameName', 'gameName', game.name);
