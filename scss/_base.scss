@@ -1,35 +1,45 @@
 body {
 	font-family: 'Roboto', sans-serif;
 
-    .mainHeader {
-        text-align: center;
-        background-image: linear-gradient(
-            to right,
-            #FDE7EA,
-            #ffffff,
-            #FDEFDA
-        );
-        font-size: 1.5rem;
-        text-transform: uppercase;
-    }
+	.mainHeader {
+		text-align: center;
+		background-image: linear-gradient(to right, #fde7ea, #ffffff, #fdefda);
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
 	.navBar {
-		margin-top: 10px;
+		// margin-top: 10px;
 		color: aqua;
 		display: flex;
 		width: 100%;
+		height: 50px;
 		justify-content: space-evenly;
 		button {
 			width: 100%;
 			border: none;
 		}
+
 		button:hover {
 			background-color: azure;
 			cursor: pointer;
 		}
+		button:nth-child(2) {
+			background: #ffffff;
+            
+		}
+		button:nth-child(1) {
+			background-image: linear-gradient(to right, #fde7ea, #ffffff);
+		}
+		button:nth-child(3) {
+			background-image: linear-gradient(to right, #ffffff, #fdefda);
+		}
+		button:nth-child(2):hover {
+            background-image: linear-gradient(to right, #fde7ea, #ffffff, #fdefda);
+        		}
 	}
 
 	.mainContainer {
-        background-color: rgb(223, 226, 226);
+		background-color: rgb(223, 226, 226);
 
         .genreFilter {
             background-color: rgb(204, 204, 204);
@@ -46,10 +56,19 @@ body {
             text-align: center;
             .gameContainer {
                 margin-top: 10px;
-
+                background-color: #ffffff;
+                border-radius: 10px;
                 .gameName {
                     background-color: aliceblue;
                     border-radius: 10px 10px 0 0;
+                }
+                .descriptionBtn {
+                    border: none;
+                    border-radius: 0 0 10px 10px ;
+                }
+                .descriptionBtn:hover {
+                    background-color: azure;
+                    cursor: pointer;
                 }
                 .gameImage {
                     align-items: center;
@@ -66,7 +85,6 @@ body {
                 }
                 .gameGenre {
                     background-color: aliceblue;
-                    border-radius: 0 0 10px 10px ;
                 }
             }
         }
@@ -82,26 +100,25 @@ body {
 			}
 		}
 
-        .contactSection {
-            display: flex;
-            flex-direction: column;
-            align-items: center; 
-            background-color: aliceblue;
-            padding: 20px; 
-            gap: 10px; 
-        
-            .contactLabel {
-                text-align: center; 
-                width: 100%;
-                .contactInput {
-                    width: 50%; 
-                }
-            }
-        
-        
-            .sendMessageBtn {
-                float: right;
-            }
-        }
+		.contactSection {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: aliceblue;
+			padding: 20px;
+			gap: 10px;
+
+			.contactLabel {
+				text-align: center;
+				width: 100%;
+				.contactInput {
+					width: 50%;
+				}
+			}
+
+			.sendMessageBtn {
+				float: right;
+			}
+		}
 	}
 }
