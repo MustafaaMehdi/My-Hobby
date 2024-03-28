@@ -55,10 +55,26 @@ body {
 			}
 		}
 
-        .aboutSection {
+        .contactSection {
             display: flex;
             flex-direction: column;
-            background-color: azure;
+            align-items: center; 
+            background-color: aliceblue;
+            padding: 20px; 
+            gap: 10px; 
+        
+            .contactLabel {
+                text-align: center; 
+                width: 100%;
+                .contactInput {
+                    width: 50%; 
+                }
+            }
+        
+        
+            .sendMessageBtn {
+                float: right;
+            }
         }
 	}
 }
