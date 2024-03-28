@@ -19,22 +19,6 @@ body {
 			border: none;
 		}
 
-		button:hover {
-			background-color: azure;
-			cursor: pointer;
-		}
-		button:nth-child(2) {
-			background: #ffffff;
-		}
-		button:nth-child(1) {
-			background-image: linear-gradient(to right, #fde7ea, #ffffff);
-		}
-		button:nth-child(3) {
-			background-image: linear-gradient(to right, #ffffff, #fdefda);
-		}
-		button:nth-child(2):hover {
-            background-image: linear-gradient(to right, #fde7ea, #ffffff, #fdefda);
-        		}
 	}
 
 	.mainContainer {
