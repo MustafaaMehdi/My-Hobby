@@ -2,7 +2,7 @@ import createElement from '../lib/createElement.mjs'
 let mainContainer = document.getElementById('mainContainer')
 let homeBtn = document.getElementById('homeBtn');
 homeBtn.addEventListener('click', homeRender)
-
+import showDescription from './showDescription.mjs';
 export default function homeRender() {
     mainContainer.innerText = '';
 
@@ -11,18 +11,18 @@ export default function homeRender() {
 
     let games = [
         { name: 'Diablo', genre: 'MMORPG', image: 'Diablo.jpeg', description: 'Diablo' },
-        { name: 'Fallout', genre: 'RPG', image: 'fallout.jpeg', Description: 'Fallout' },
-        { name: 'Assassins creed', genre: 'Action', image: 'assassinsCreed.jpeg', Description: 'Assassins creed' },
-        { name: 'God of war', genre: 'Action', image: 'godOfWar.jpeg', Description: 'Gow' },
-        { name: 'The last of us', genre: 'Horror', image: 'lastOfUs.jpeg', Description: 'The last of us' },
-        { name: 'Bloodborne', genre: 'Action', image: 'Bloodborne.jpeg', Description: 'Bloodborne' },
-        { name: 'Ratchet Clank', genre: 'Adventure', image: 'ratchetClank.jpeg', Description: 'Ratchet' },
-        { name: 'Ghost of Tsushima', genre: 'Action', image: 'ghostOfTsushima.jpeg', Description: 'Ghost of Tsushima' },
-        { name: 'Call of duty', genre: 'Action', image: 'callOfDuty.jpeg', Description: 'COD cold war' }
+        { name: 'Fallout', genre: 'RPG', image: 'fallout.jpeg', description: 'Fallout' },
+        { name: 'Assassins creed', genre: 'Action', image: 'assassinsCreed.jpeg', description: 'Assassins creed' },
+        { name: 'God of war', genre: 'Action', image: 'godOfWar.jpeg', description: 'Gow' },
+        { name: 'The last of us', genre: 'Horror', image: 'lastOfUs.jpeg', description: 'The last of us' },
+        { name: 'Bloodborne', genre: 'Action', image: 'Bloodborne.jpeg', description: 'Bloodborne' },
+        { name: 'Ratchet Clank', genre: 'Adventure', image: 'ratchetClank.jpeg', description: 'Ratchet' },
+        { name: 'Ghost of Tsushima', genre: 'Action', image: 'ghostOfTsushima.jpeg', description: 'Ghost of Tsushima' },
+        { name: 'Call of duty', genre: 'Action', image: 'callOfDuty.jpeg', description: 'COD cold war' }
     ];
 
     games.forEach(game => {
-        let gameContainer = createElement('article', 'gameContainer', 'gameContainer');
+        let gameContainer = createElement('article', `${game.name}`, 'gameContainer');
         let gameName = createElement('h2', 'gameName', 'gameName', game.name);
         let gameGenre = createElement('p', 'gameGenre', 'gameGenre', `Genre: ${game.genre}`);
         let gameImage = createElement('img', 'gameImage', 'gameImage');
@@ -34,6 +34,8 @@ export default function homeRender() {
 
         gameContainer.append(gameName, gameImage, gameGenre, descriptionBtn);
         hobbySection.appendChild(gameContainer);
+        descriptionBtn.addEventListener('click', () => showDescription(game))
+
     });
 
     let genreFilter = createElement('select', 'genreFilter', 'genreFilter');
@@ -46,7 +48,6 @@ export default function homeRender() {
         genreFilter.appendChild(genreOption);
     });
     mainContainer.insertBefore(genreFilter, hobbySection)
-    // hobbySection.insertBefore(hobbySection.firstChild);
 
     genreFilter.addEventListener('change', function () {
         let selectedGenre = this.value;

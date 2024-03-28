@@ -46,10 +46,19 @@ body {
             text-align: center;
             .gameContainer {
                 margin-top: 10px;
-
+                background-color: #ffffff;
+                border-radius: 10px;
                 .gameName {
                     background-color: aliceblue;
                     border-radius: 10px 10px 0 0;
+                }
+                .descriptionBtn {
+                    border: none;
+                    border-radius: 0 0 10px 10px ;
+                }
+                .descriptionBtn:hover {
+                    background-color: azure;
+                    cursor: pointer;
                 }
                 .gameImage {
                     align-items: center;
@@ -66,7 +75,6 @@ body {
                 }
                 .gameGenre {
                     background-color: aliceblue;
-                    border-radius: 0 0 10px 10px ;
                 }
             }
         }
